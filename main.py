@@ -1,4 +1,4 @@
-from models import TaskManager
+from todo_module import TasksManager
 
 
 def print_menu():
@@ -34,7 +34,7 @@ def read_task_number():
 
 def main():
     # Създаваме обект от класа TaskManager
-    manager = TaskManager()
+    manager = TasksManager()
 
     while True:
         print_menu()
