@@ -36,7 +36,7 @@ To-Do List Application е конзолно Python приложение за уп
 todo_list_project/
 │
 ├── main.py
-├── models.py
+├── todo_module.py
 ├── tasks.json
 ├── requirements.txt
 └── README.md
