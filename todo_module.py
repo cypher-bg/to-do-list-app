@@ -38,7 +38,7 @@ class TasksManager:
             print(f"Грешка при запис във файл: {error}")
 
     def validate_date(self, date_text):
-        # Проверява дали датата е във формат ГГГГ-ММ-ДД
+        # Проверява дали датата е във формат ДД-ММ-ГГГГ
         try:
             datetime.strptime(date_text, "%d-%m-%Y")
             return True
@@ -57,7 +57,7 @@ class TasksManager:
             return
 
         if not self.validate_date(due_date):
-            print("Невалиден формат на дата. Използвайте ГГГГ-ММ-ДД.")
+            print("Невалиден формат на дата. Използвайте ДД-ММ-ГГГГ.")
             return
 
         task = {
